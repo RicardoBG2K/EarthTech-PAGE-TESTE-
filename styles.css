@@ -1,0 +1,332 @@
+/*Versão 1 (25/10/2023)
+    Feito por RICARDO BATISTA GUIMARÃES*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: linear-gradient(999deg, #000000,#000000, #0000007c, #000000, #000000); /* Fundo com gradiente */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: space-between; /* Alinha o título e a navegação nos cantos opostos */
+    align-items: center;
+}
+
+/* Estilizando o título */
+header h1 {
+    font-size: 36px;
+    color: #007a8f;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada para um toque tecnológico */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada para um toque tecnológico */
+}
+
+nav ul li a:hover {
+    color: #007a8f;
+}
+
+/* Estilo para tornar a barra de navegação fixa no topo */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #00000049;
+    z-index: 100;
+    border-radius: 10px; /* Adiciona borda arredondada ao fundo */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+#destaque {
+    background-color: #000000; /* Cor de fundo cinza escuro */
+    background-image: url('seu-fundo.jpg'); /* Adicione uma imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-bg {
+    object-fit: cover;
+    width: 29%;
+    height: 29%;
+}
+
+#destaque h1 {
+    font-size: 48px; /* Texto maior */
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007a8f; /* Cor laranja */
+    color: #fff;
+    padding: 15px 30px; /* Maior espaço de preenchimento */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Efeito de transição de cor */
+}
+
+.cta-button:hover {
+    background-color: #42e3ff; /* Cor laranja mais clara ao passar o mouse */
+}
+
+
+/* Estilos para a seção de qualidade */
+#qualidade {
+    background-color: #88888834; /* Cor de fundo suave */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#qualidade h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000; /* Cor do título */
+    margin-bottom: 30px;
+}
+
+.feature {
+    margin: 20px;
+    padding: 20px;
+    background-color: #0200005e; /* Fundo branco para cada bloco de qualidade */
+    border-radius: 10px; /* Borda arredondada mais pronunciada */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais notável */
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007a8f; /* Cor de destaque para o título do qualidade */
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #ffffff; /* Cor de texto mais escura */
+    line-height: 1.6;
+}
+
+/* Estilize ainda mais os links */
+.feature a {
+    color: #007a8f; /* Cor de link personalizada */
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Adicione uma linha de link sublinhada */
+    transition: border-color 0.3s; /* Animação de linha de link no hover */
+}
+
+.feature a:hover {
+    border-color: #007a8f; /* Cor da linha de link no hover */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #qualidade h2 {
+        font-size: 28px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+}
+
+/* Ajuste o espaçamento vertical para os blocos de qualidade */
+.feature:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+/* Estilos para a seção de contato */
+#contato {
+    background-image: url(IMG/MARTE-terra3.jpg); /* Cor de fundo suave */
+    color: 252525; /* Cor do texto principal */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#contato h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor de destaque para o título */
+}
+
+#contato p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilize o formulário de contato */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 5px; /* Borda arredondada para o formulário */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form label {
+    font-size: 16px;
+    color: #252525;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    font-size: 16px;
+}
+
+form button {
+    background-color: #007a8f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animação de cor de fundo no hover */
+}
+
+form button:hover {
+    background-color: #007a8f; /* Cor mais clara no hover */
+}
+
+/* Estilos para a mensagem de confirmação */
+.confirmation-message {
+    background-color: #007a8f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        padding: 10px 20px;
+    }
+}
+
+/* Estilos padrão para telas maiores */
+.social {
+    position: static;
+    z-index: 60;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social p {
+    color: #007a8f;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 100px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(0.8) translateY(-25px);
+}
+
+footer {
+    background-color: #161616; /* Cor de fundo do footer (rodapé) */
+}
+
+/* Estilos para telas médias (768px a 1024px de largura) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .social li a {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+/* Estilos para telas pequenas (até 768px de largura) */
+@media (max-width: 768px) {
+    .social {
+        justify-content: space-around;
+    }
+
+    .social li a {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+.confirmation-message {
+    background-color: #007a8f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+}

@@ -1,0 +1,71 @@
+<!--Versão 1 (25/10/2023)
+    Feito por RICARDO BATISTA GUIMARÃES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem enviada.</title>
+    <link rel="icon" href="IMG/Terra-title.png">
+    <style>
+        body {
+            background-color: #000; /* Fundo preto */
+            color: #007a8f; /* Texto em vermelho */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            color: #007a8f; /* Título em vermelho */
+        }
+        .success-message {
+            background-color: #1a1a1a; /* Fundo escuro */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .return-button {
+            background-color: #007a8f; /* Botão em vermelho */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        /* Estilos para ícone de tecnologia */
+        .technology-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-cogs technology-icon"></i>
+        <h1>Sucesso</h1>
+        <div class="success-message">
+            <p>Suas informações foram enviadas com sucesso!</p>
+            <a href="javascript:history.back()" class="return-button">Retornar à página anterior</a>
+        </div>
+    </div>
+</body>
+</html>
